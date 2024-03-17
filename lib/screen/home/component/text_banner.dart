@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:portofolio_website/constaint.dart';
 import 'package:portofolio_website/responsive.dart';
 
+// ... (existing code)
+
 class TextBanner extends StatelessWidget {
   const TextBanner({
     Key? key,
@@ -17,16 +19,16 @@ class TextBanner extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "Discover my Amazing \nProject!",
+            "Meet \nIsar Ahmad",
             style: Responsive.isDesktop(context)
                 ? Theme.of(context)
-                    .textTheme
-                    .headline3!
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.white)
+                .textTheme
+                .headline3!
+                .copyWith(fontWeight: FontWeight.bold, color: Colors.white)
                 : Theme.of(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.white),
+                .textTheme
+                .headline5!
+                .copyWith(fontWeight: FontWeight.bold, color: Colors.white),
           ),
           if (!Responsive.isMobileLarge(context))
             SizedBox(
@@ -52,17 +54,13 @@ class AnimatedText extends StatelessWidget {
       style: Theme.of(context).textTheme.subtitle1!,
       child: Row(
         children: [
-          Text("I build "),
+          Text(""),
           AnimatedTextKit(
             animatedTexts: [
-              TyperAnimatedText("flutter portofolio website."),
-              TyperAnimatedText("e-commerce with firebase."),
-              TyperAnimatedText("social media integeration."),
-              TyperAnimatedText("covid tracker integeration."),
-              TyperAnimatedText("flutter news app."),
-              TyperAnimatedText("hero quiz app."),
-              TyperAnimatedText("translator apps."),
-              TyperAnimatedText("to-do list apps."),
+              TyperAnimatedText("Android Developer."),
+              TyperAnimatedText("Passionate about creating innovative solutions."),
+              TyperAnimatedText("Experienced in e-commerce and social media integration."),
+              TyperAnimatedText("Skilled in Java, Kotlin, Android, SQL, Git, and more."),
             ],
           ),
         ],
@@ -70,3 +68,4 @@ class AnimatedText extends StatelessWidget {
     );
   }
 }
+

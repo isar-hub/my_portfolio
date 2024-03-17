@@ -17,9 +17,7 @@ class MyProject extends StatelessWidget {
           "My Projects",
           style: Theme.of(context).textTheme.headline6,
         ),
-        Text(
-          "Click Read More if you want see a source code or more details",
-        ),
+
         SizedBox(
           height: defaultPadding,
         ),

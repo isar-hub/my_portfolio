@@ -12,9 +12,13 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
+
         child: SingleChildScrollView(
+
       padding: EdgeInsets.all(defaultPadding),
+
       child: Column(
+
         children: [
           Text(
             "Skills",
@@ -24,23 +28,23 @@ class SideMenu extends StatelessWidget {
             height: defaultPadding,
           ),
           SkillMenu(
-            image1: 'images/flutter.png',
-            text1: 'Flutter',
-            image2: 'images/java.png',
-            text2: 'Java',
-            image3: 'images/mysql.png',
-            text3: 'MySQL',
+            image1: 'images/android.png',
+            text1: 'Android',
+            image2: 'images/kotlin.png',
+            text2: 'Kotlin',
+            image3: 'images/java.png',
+            text3: 'Java',
           ),
           SizedBox(
             height: defaultPadding,
           ),
           SkillMenu(
-            image1: 'images/php.png',
-            text1: 'Php',
-            image2: 'images/firebase.png',
-            text2: 'Firebase',
-            image3: 'images/git.png',
-            text3: 'Git',
+            image1: 'images/flutter.png',
+            text1: 'Flutter',
+            image2: 'images/git.png',
+            text2: 'Git',
+            image3: 'images/github.png',
+            text3: 'Github',
           ),
           SizedBox(height: defaultPadding),
           Divider(),
